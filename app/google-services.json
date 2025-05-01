@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804327531356",
+    "project_id": "gate-pass-cb393",
+    "storage_bucket": "gate-pass-cb393.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804327531356:android:e04c9948567790bb001799",
+        "android_client_info": {
+          "package_name": "com.retroboys.egatpass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4CH0eEhKvSRAc_Xh7eyZqH3iHRbjYVIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

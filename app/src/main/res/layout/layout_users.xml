@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/blue_buttons_bakground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="2dp"
+        android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/view_user_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="username"
+    android:textStyle="bold"
+    android:paddingLeft="10dp"
+    android:layout_weight="1"
+    android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/view_name"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="25dp"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/view_hostel"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hostel"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

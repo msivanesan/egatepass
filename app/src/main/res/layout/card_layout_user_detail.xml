@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="user"
+            type="com.retroboys.egatpass.Users" />
+    </data>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="300dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@{user.name}"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/card_phno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@{user.phNumber}"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/card_hostel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@{user.hostel}"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"/>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

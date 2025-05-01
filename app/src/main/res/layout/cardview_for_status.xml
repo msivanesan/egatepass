@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="pass"
+            type="com.retroboys.egatpass.GatePass" />
+    </data>
+
+
+<androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/statuscard_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@{pass.name}"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/statuscard_phno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@{pass.phNumber}"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/statuscard_hostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@{pass.hostel}"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/stauscard_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@{pass.aproveTime}"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/stauscard_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@{pass.status}"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

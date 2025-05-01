@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.retroboys.egatpass.GatePass" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/bakground1"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAproveDenayPass">
+
+
+    <include
+        android:id="@+id/card_detail_layout"
+        layout="@layout/card_view_requst_responce_layout"
+        android:layout_width="wrap_content"
+        app:user="@{user}"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/card_detail_layout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/outline_with_flat_bottum"
+            android:text="Remarks"
+            android:textSize="20dp" />
+
+        <TextView
+           android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@{user.messsage}"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:background="@drawable/outline_with_flat_top"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Enter your reason" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/outline_with_flat_bottum"
+            android:text="Remarks"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Staff_remark"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/outline_with_flat_top"
+            android:layout_marginHorizontal="20dp"
+            android:hint="Enter your reason" />
+<Button
+    android:id="@+id/staff_approve"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/green"
+    android:layout_marginTop="20dp"
+    android:text="Appove"/>
+        <Button
+            android:id="@+id/staff_denay"
+            android:backgroundTint="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Deney"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
